@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animation pour les éléments d'urgence */
+@keyframes pulse-red {
+  0%, 100% {
+    transform: scale(1);
+    background-color: rgb(220, 38, 38);
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: rgb(185, 28, 28);
+  }
+}
+
+.animate-pulse-red {
+  animation: pulse-red 2s infinite;
+}
